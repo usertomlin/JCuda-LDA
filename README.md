@@ -9,9 +9,9 @@ See TrainAndUseExamples.java in package 'jcudalda.example' for an example of tra
 
 1. Supports NVIDIA graphic cards, Cuda 8.0.44, and Java 7 or above, on 64 bit Windows 7, 8, and 10. 
 
-Feel free to leave issues if there are any Cuda configuration problems.
+2. Add the four jar files in the 'libs' folder to build path, and then the APIs can be used.   
 
-2. Use Maven to build project, or add the jar files in the 'libs' folder to build path. 
+Feel free to leave issues if there are any Cuda configuration or other environmental problems.
 
 
 ## Usage
@@ -96,8 +96,8 @@ Use a trained LDA model for efficient parallel distributed representation for mu
 ```java
 
 	/**
-	 * A list of vocabulary words. Used for the mapping of words and word indices 
-	 */
+	* A list of vocabulary words. Used for the mapping of words and word indices 
+	*/
 	String vocabularyFilePath = "resources/enVocabulary-45k.txt";
 	
 	/**
