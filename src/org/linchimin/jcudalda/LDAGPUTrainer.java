@@ -30,6 +30,7 @@ import gnu.trove.TIntArrayList;
  * It's recommended to use 'trainWithIntsCorpus' to train, which is by far faster than 'trainWithTextsCorpus'.
  * 
  * </pre>
+ * 
  * @author Lin Chi-Min (v381654729@gmail.com)
  *
  */
