@@ -7,7 +7,7 @@ See TrainAndUseExamples.java in package 'jcudalda.example' for an example of tra
 
 ## Environment 
 
-1. Supports NVIDIA graphic cards, Cuda 8.0.44, and Java 7 or above, on 64 bit Windows 7, 8, and 10. 
+1. Supports NVIDIA graphic cards on 64 bit Windows 7, 8, or 10 installed with Cuda 8.0.44 and JDK 7 or above.
 
 2. Add the four jar files in the 'libs' folder to build path, and then the APIs can be used.   
 
