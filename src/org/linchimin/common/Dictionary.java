@@ -28,8 +28,8 @@ public class Dictionary implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	protected static final float DEFAULT_LOAD_FACTOR = 0.5f;
-	// for consistency and convenience
-	private static final int NO_ENTRY_VALUE = -1;
+	
+	private static final int NO_ENTRY_VALUE = 0;
 
 	/**
 	 * used to look up index by feature; the index starts from 0
@@ -64,11 +64,6 @@ public class Dictionary implements Serializable {
 	}
 	
 	public Dictionary(TObjectIntHashMap<String> valueToIndexMap, ArrayList<String> values, TIntArrayList frequencies) {
-		
-//		if (valueToIndexMap.getNoEntryValue() != NO_ENTRY_VALUE){
-//			throw new IllegalArgumentException("IllegalArgumentException: create a valueToIndexMap such that its not entry value equals DEFAULT_NO_ENTRY_VALUE " + NO_ENTRY_VALUE);
-//		}
-		
 		if (values.size() != valueToIndexMap.size() || values.size() != frequencies.size()) {
 			throw new IllegalArgumentException("IllegalArgumentException: the sizes are not all compatible; "
 					+ "values.size() = " + values.size() + ", valueToIndexMap.size() = " + valueToIndexMap.size() + ", frequencies.size() = " + frequencies.size());
@@ -265,9 +260,4 @@ public class Dictionary implements Serializable {
 	}
 
 	
-	public static void main(String[] args) throws Exception {
-		TObjectIntHashMap<String> fref = new TObjectIntHashMap<>();
-		int fef = fref.get("fw");
-		System.out.println("fef = " + fef);
-	}
 }
