@@ -79,6 +79,7 @@ Train an LDA model:
 	
 	/**
 	 * 1. supports training with a folder of many text files containing documents with format like 'example-docs.txt'
+	 * (where each document is preceded by a line of "<doc>" with optional attributes and succeeded by a line of "</doc>")
 	 * 2. not recommended to use this method to train, which is by far slower than 'trainWithIntsCorpus'
 	 */
 	else {

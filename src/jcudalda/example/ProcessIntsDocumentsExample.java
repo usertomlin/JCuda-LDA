@@ -20,12 +20,13 @@ class ProcessIntsDocumentsExample {
 	/**
 	 * <pre>
 	 * 1. This snippet is an example for creating many ArrayList<int[]> serialized files 
-	 * from a folder (sourceTextsDir) of texts files with format like 'resources/example-docs.txt',
+	 * from a folder (sourceTextsDir) of texts files with format like 'resources/example-docs.txt', 
+	 * * (where each document is preceded by a line of "<doc>" with optional attributes and succeeded by a line of "</doc>")
 	 * and then save the ArrayList<int[]> serializable files to a folder
 	 * Each 'int[]' represents word indices of a document. 
 	 * 
 	 * 
-	 * sourceTextsDir (each text file is like "resources/example-docs.txt)
+	 * sourceTextsDir (each text file is like "resources/example-docs.txt")
 	 * --wiki_00.txt
 	 * --wiki_01.txt
 	 * ...
@@ -55,6 +56,7 @@ class ProcessIntsDocumentsExample {
 	 * "enwiki-20170820-pages-articles-multistream.xml.bz2" from https://dumps.wikimedia.org/enwiki/ 
 	 * and process it to raw texts with a tool like WikiExtractor.py on https://github.com/attardi/wikiextractor , 
 	 * or obtain raw texts from other sources like Common Crawl. 
+	 * 
 	 * 
 	 * 
 	 * </pre>
